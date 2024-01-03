@@ -1,0 +1,186 @@
+#nav-status-order{
+    margin: 25px 0px;
+    background-color: beige;
+}
+
+#nav-status-order ul li{
+    padding: 10px 56px;
+}
+
+#nav-status-order ul li a{
+    color: black;
+}
+
+#nav-status-order ul li a:hover{
+    color: red;
+}
+
+#wp-content #history-cart {
+    background-color: white;
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding: 15px;    
+}
+
+
+#wp-content #history-cart h2 {
+    text-align: center;
+}
+
+#wp-content #history-cart ul li {
+    list-style: none;
+}
+
+#wp-content #history-cart ul li table thead tr td {
+    font-weight: bold;
+}
+
+#wp-content #history-cart ul li {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+#wp-content #history-cart ul li table {
+    width: 100%;
+}
+
+#wp-content #history-cart ul li table thead tr td {
+    width: 10%;
+    padding: 15px 0px;
+}
+
+#wp-content #history-cart ul li table thead tr td:first-child {
+    width: 4%;
+}
+
+#wp-content #history-cart ul li table tbody tr td {
+    /* margin-bottom: 15px; */
+    padding: 10px 0px;
+}
+
+#wp-content #history-cart ul li table tbody tr td img {
+    width: 40%;
+    height: auto;
+}
+
+#wp-content #history-cart ul li p {
+    margin: 10px 0px;
+}
+
+/* #wp-content #history-cart ul li .subtotal,
+#wp-content #history-cart ul li .status,
+#wp-content #history-cart ul li .method {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+} */
+
+#wp-content #history-cart ul li .subtotal span,
+#wp-content #history-cart ul li .status p,
+#wp-content #history-cart ul li .method p {
+    margin-right: 13%;
+    /* margin-bottom: 15px; */
+}
+
+#wp-content #history-cart ul li .method a {
+    background-color: blue;
+    color: white;
+    margin-right: 228px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#wp-content #history-cart ul li .method a:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+#wp-content #history_replace {
+    background-color: white;
+    width: 1640px;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding: 15px;
+    display: none;
+}
+
+#wp-content #history_replace h2 {
+    text-align: center;
+}
+
+#wp-content #history_replace ul li {
+    list-style: none;
+}
+
+#wp-content #history_replace ul li table thead tr td {
+    font-weight: bold;
+}
+
+#wp-content #history_replace ul li {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+#wp-content #history_replace ul li table {
+    width: 100%;
+}
+
+#wp-content #history_replace ul li table thead tr td {
+    width: 10%;
+    padding: 15px 0px;
+}
+
+#wp-content #history_replace ul li table thead tr td:first-child {
+    width: 4%;
+}
+
+#wp-content #history_replace ul li table tbody tr td {
+    /* margin-bottom: 15px; */
+    padding: 10px 0px;
+}
+
+#wp-content #history_replace ul li table tbody tr td img {
+    width: 40%;
+    height: auto;
+}
+
+#wp-content #history_replace ul li p {
+    margin-bottom: 10px;
+}
+
+#wp-content #history_replace ul li .subtotal,
+#wp-content #history_replace ul li .status,
+#wp-content #history_replace ul li .method {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#wp-content #history_replace ul li .method a {
+    background-color: blue;
+    color: white;
+    margin-right: 228px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#wp-content #history_replace ul li .method a:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.clear-both{
+    clear: both;
+}
+
+#empty-order{
+    /* background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px; */
+    /* background-image: 'http://localhost/unitop.vn/Laravel/Project/LaravelProject/public/images/empty-order.png'; */
+}

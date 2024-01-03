@@ -1,0 +1,29 @@
+/* #paging-wp #desc {
+    font-size: 13px;
+    color: #b5b5b5;
+    font-style: italic;
+} */
+
+#list-paging {
+    float: right;
+    margin-top: 23px;
+}
+
+#list-paging li {
+    float: left;
+    list-style: none!important;
+    padding: 0px 2px;
+}
+
+#list-paging li a {
+    display: block;
+    padding: 5px 10px;
+    color: #333;
+    border: 1px solid #dedede;
+    text-decoration: none;
+}
+
+#list-paging li.active a {
+    border: 1px solid #f00;
+    color: #f00;
+}
