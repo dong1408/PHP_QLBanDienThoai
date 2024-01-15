@@ -1,9 +1,9 @@
 <?php
-function construct(){
-
+function construct()
+{
 }
 
-function indexAction(){
+function indexAction()
+{
     load_view('show');
 }
-?>

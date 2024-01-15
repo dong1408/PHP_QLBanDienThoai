@@ -37,21 +37,6 @@ $userDAL = new UserDAL();
             </ul>
         </li> -->
 
-        <!-- <li class="nav-link">
-            <a href="?view=list-post">
-                <div class="nav-link-icon d-inline-flex">
-                    <i class="far fa-folder"></i>
-                </div>
-                Bài viết
-            </a>
-            <i class="arrow fas fa-angle-right"></i>
-            <ul class="sub-menu">
-                <li><a href="?view=add-post">Thêm mới</a></li>
-                <li><a href="?view=list-post">Danh sách</a></li>
-                <li><a href="?view=cat">Danh mục</a></li>
-            </ul>
-        </li> -->
-
 
         <?php
         if ($userDAL->hasPermission('product.view') || $userDAL->hasPermission('product.add') || $userDAL->hasPermission('product.edit') || $userDAL->hasPermission('product.delete' || $userDAL->hasPermission('category.view') || $userDAL->hasPermission('category.edit') || $userDAL->hasPermission('category.view') || $userDAL->hasPermission('category.add') || $userDAL->hasPermission('category.delete'))) {
@@ -145,6 +130,23 @@ $userDAL = new UserDAL();
         <?php
         }
         ?>
+
+        <li class="nav-link">
+            <a href="?mod=statistical">
+                <div class="nav-link-icon d-inline-flex">
+                    <i class="far fa-folder"></i>
+                </div>
+                Thống kê
+            </a>
+            <i class="arrow fas fa-angle-right"></i>
+            <ul class="sub-menu">
+                <li><a href="?mod=statistical&statistical=time">Thời gian</a></li>
+                <li><a href="?mod=statistical&statistical=staff">Nhân viên</a></li>
+                <li><a href="?mod=statistical&statistical=cus">Khách hàng</a></li>
+                <li><a href="?mod=statistical&statistical=product">Sản phẩm</a></li>
+            </ul>
+        </li>
+
 
         <?php
         if ($userDAL->hasPermission('role.view') || $userDAL->hasPermission('role.add') || $userDAL->hasPermission('role.edit') || $userDAL->hasPermission('role.delete') || $userDAL->hasPermission('permission.view') || $userDAL->hasPermission('permission.add') || $userDAL->hasPermission('permission.edit') || $userDAL->hasPermission('permission.delete')) {

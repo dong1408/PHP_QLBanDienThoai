@@ -7,68 +7,72 @@ get_header();
     get_sidebar();
     ?>
     <div id="wp-content">
-        <div class="container-fluid py-5">
-            <div class="row">
-                <div class="col">
-                    <a href="?mod=order&type=1">
-                        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                            <div class="card-header">CHỜ XÁC NHẬN</div>
-                            <div class="card-body">
-                                <h5 class="card-title"><?php echo $countNewOrder ?></h5>
-                                <p class="card-text">Đơn hàng mới chưa được xác nhận</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="?mod=order&type=3">
-                        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-                            <div class="card-header">ĐANG XỬ LÝ</div>
-                            <div class="card-body">
-                                <h5 class="card-title"><?php echo $countProcessOrder ?></h5>
-                                <p class="card-text">Số lượng đơn hàng đang xử lý</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="?mod=order&type=4">
-                        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-                            <div class="card-header">ĐANG VẬN CHUYỂN</div>
-                            <div class="card-body">
-                                <h5 class="card-title"><?php echo $countShipOrder ?></h5>
-                                <p class="card-text">Đơn hàng đang vận chuyển</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="?mod=order&type=6">
-                        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                            <div class="card-header">THÀNH CÔNG</div>
-                            <div class="card-body">
-                                <h5 class="card-title"><?php echo $countCompletedOrder ?></h5>
-                                <p class="card-text">Đơn hàng giao dịch thành công</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="?mod=order&type=7">
-                        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-                            <div class="card-header">ĐƠN HÀNG HỦY</div>
-                            <div class="card-body">
-                                <h5 class="card-title"><?php echo $countCancelOrder ?></h5>
-                                <p class="card-text">Số đơn bị hủy trong hệ thống</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!-- end analytic  -->
+        <div id="content" class="container-fluid">
             <div class="card">
-                <div class="card-header font-weight-bold">
-                    <p>ĐƠN HÀNG <?php echo mb_strtoupper($orderStatus) ?></p>
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col">
+                            <a href="?mod=order&type=1">
+                                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">CHỜ XÁC NHẬN</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?php echo $countNewOrder ?></h5>
+                                        <p class="card-text">Đơn hàng mới chưa được xác nhận</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="?mod=order&type=3">
+                                <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">ĐANG XỬ LÝ</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?php echo $countProcessOrder ?></h5>
+                                        <p class="card-text">Số lượng đơn hàng đang xử lý</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="?mod=order&type=4">
+                                <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">ĐANG VẬN CHUYỂN</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?php echo $countShipOrder ?></h5>
+                                        <p class="card-text">Đơn hàng đang vận chuyển</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="?mod=order&type=6">
+                                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">THÀNH CÔNG</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?php echo $countCompletedOrder ?></h5>
+                                        <p class="card-text">Đơn hàng giao dịch thành công</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="?mod=order&type=7">
+                                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">ĐƠN HÀNG HỦY</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?php echo $countCancelOrder ?></h5>
+                                        <p class="card-text">Số đơn bị hủy trong hệ thống</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end analytic  -->
+                <!-- <div class="card"> -->
+                <div class="card-header font-weight-bold pb-0">
+                    <p>ĐƠN HÀNG <?php echo mb_strtoupper($orderStatus) . " ($amountOrder)" ?></p>
                 </div>
                 <div class="card-body">
                     <table class="table table-striped">
@@ -134,6 +138,7 @@ get_header();
                     </nav>
                 </div>
 
+                <!-- </div> -->
             </div>
         </div>
     </div>

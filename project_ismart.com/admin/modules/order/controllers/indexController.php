@@ -24,22 +24,27 @@ function indexAction()
         $numPage = ceil($countProcessOrder / $itemPerPage);
         $orders = $orderDAL->getObjects($pageCurrent, "status_id = 3", $itemPerPage);
         $orderStatus = "Đang xử lý";
+        $amountOrder = $countProcessOrder;
     } elseif ($type == 4) {
         $numPage = ceil($countShipOrder / $itemPerPage);
         $orders = $orderDAL->getObjects($pageCurrent, "status_id = 4", $itemPerPage);
         $orderStatus = "Đang vận chuyển";
+        $amountOrder = $countShipOrder;
     } elseif ($type == 6) {
         $numPage = ceil($countCompletedOrder / $itemPerPage);
         $orders = $orderDAL->getObjects($pageCurrent, "status_id = 6", $itemPerPage);
         $orderStatus = "Đã hoàn thành";
+        $amountOrder = $countCompletedOrder;
     } elseif ($type == 7) {
         $numPage = ceil($countCancelOrder / $itemPerPage);
         $orders = $orderDAL->getObjects($pageCurrent, "status_id = 7", $itemPerPage);
         $orderStatus = "Bị hủy";
+        $amountOrder = $countCancelOrder;
     } else {
         $numPage = ceil($countNewOrder / $itemPerPage);
         $orders = $orderDAL->getObjects($pageCurrent, "status_id = 1", $itemPerPage);
         $orderStatus = "Chờ xác nhận";
+        $amountOrder = $countNewOrder;
     }
     $data = [
         'orders' => $orders,
@@ -54,7 +59,8 @@ function indexAction()
         'countCancelOrder' => $countCancelOrder,
         'userDAL' => $userDAL,
         'orderDetailDAL' => $orderDetailDAL,
-        'productDAL' => $productDAL
+        'productDAL' => $productDAL,
+        'amountOrder' => $amountOrder
     ];
     load_view('index', $data);
 }
